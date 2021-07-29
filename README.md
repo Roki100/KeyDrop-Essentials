@@ -22,3 +22,6 @@ FolderName
   jquery-3.6.0.min.js
   manifest.json
 ```
+
+---
+BTW It is one of my first browser extensions so the code might not be the best :)

@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "KeyDrop Essentials",
+    "description": "Enchances your experience with KeyDrop by adding some useful features.",
+    "author": "Roki_100",
+    "version": "0.1",
+    "content_scripts": [
+        {
+          "matches": [
+            "https://key-drop.com/*/panel/profil",
+            "https://key-drop.com/*/panel/profil/",
+            "http://key-drop.com/*/panel/profil",
+            "http://key-drop.com/*/panel/profil/"
+          ],
+          "js": ["jquery-3.6.0.min.js", "inventory.js"]
+        },
+        {
+          "matches": [
+            "https://key-drop.com/*",
+            "http://key-drop.com/*"
+          ],
+          "js": ["jquery-3.6.0.min.js", "background.js"]
+        }
+    ]
+}

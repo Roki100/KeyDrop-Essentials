@@ -11,7 +11,7 @@ $(document).ready(async function () {
         PRICES.push(data.data[i].price);
     }
     let TOTAL = PRICES.reduce(function (a, b) { return a + b });
-    TOTAL = `${TOTAL} ${data.data[0].currency}`;
+    TOTAL = `${TOTAL.toFixed(2)} ${data.data[0].currency}`;
     check();
 
     async function check() {

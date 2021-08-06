@@ -15,7 +15,7 @@ $(document).ready(async function () {
     check();
 
     async function check() {
-        if (document.getElementsByClassName("flex items-center justify-center order-2 border border-solid rounded-lg h-14 my-5 xl:my-0 xl:order-3 border-navy-500  css-18bnk4x").length == 1) return append();
+        if (document.getElementsByClassName("flex items-center justify-center order-2 border border-solid rounded-lg h-14 my-5 xl:my-0 xl:order-3 border-navy-500  css-18bnk4x").length == 1 && document.getElementById('keydrop-essentials-by-roki-inventory-history-value') == null) append();
         await sleep(500);
         return check();
     }
